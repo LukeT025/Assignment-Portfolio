@@ -1,4 +1,4 @@
-/:root{
+:root{
   --bg: #ffffff;
   --text: #000000;
   --muted: #444444;
@@ -14,28 +14,55 @@ body {
   color: var(--text);
   line-height: 1.5;
 }
+
 /* Header */
-.site-header { padding: 20px; border-bottom: 1px solid var(--border); }
+.site-header { 
+  padding: 20px; 
+  /* was border-bottom; now a full box */
+  border: 1px solid var(--border);
+  border-radius: 4px;     /* set to 0 for sharp corners */
+  margin: 16px;           /* space around the boxed header */
+  background: #fff;
+}
 .site-header h1 { margin: 0 0 6px; }
 .site-header p  { margin: 0; color: var(--muted); }
+
 /* Layout */
-main { padding: 20px; }
+main { padding: 0 20px 20px; }
 h2 { margin: 18px 0 10px; font-size: 1.15rem; }
+
+/* ==== BOXES AROUND SECTIONS ==== */
+main section {
+  border: 1px solid var(--border);
+  border-radius: 4px;     /* set to 0 for sharp corners */
+  background: #fff;
+  padding: 16px;
+  margin: 16px;           /* space between section boxes */
+}
+
 /* Simple rectangular cards */
 .card-list {
-  list-style: none; margin: 0; padding: 0;
-  display: grid; gap: 12px;
+  list-style: none; 
+  margin: 0; 
+  padding: 0;
+  display: grid; 
+  gap: 12px;
 }
 .card {
   border: 1px solid var(--border);
   padding: 12px 14px;
-  border-radius: 4px; /* set to 0 for perfectly square corners */
+  border-radius: 4px;      /* set to 0 for perfectly square corners */
   background: #fff;
 }
 .card a, .card span {
-  display: inline-block; font-weight: 600;
-  text-decoration: none; color: var(--link);
+  display: inline-block; 
+  font-weight: 600;
+  text-decoration: none; 
+  color: var(--link);
 }
 .card a:hover { text-decoration: underline; }
-.card small { display: block; color: var(--muted); margin-top: 4px; }
-
+.card small { 
+  display: block; 
+  color: var(--muted); 
+  margin-top: 4px; 
+}

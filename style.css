@@ -1,12 +1,10 @@
-/* Simple, clean, white-on-black as requested */
-:root{
+/:root{
   --bg: #ffffff;
   --text: #000000;
   --muted: #444444;
   --border: #dddddd;
-  --link: #0a58ca; /* default-ish blue */
+  --link: #0a58ca;
 }
-
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 body {
@@ -16,38 +14,28 @@ body {
   color: var(--text);
   line-height: 1.5;
 }
-
 /* Header */
-.site-header {
-  padding: 20px;
-  border-bottom: 1px solid var(--border);
-}
+.site-header { padding: 20px; border-bottom: 1px solid var(--border); }
 .site-header h1 { margin: 0 0 6px; }
 .site-header p  { margin: 0; color: var(--muted); }
-
 /* Layout */
 main { padding: 20px; }
 h2 { margin: 18px 0 10px; font-size: 1.15rem; }
-
 /* Simple rectangular cards */
 .card-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 12px;
+  list-style: none; margin: 0; padding: 0;
+  display: grid; gap: 12px;
 }
 .card {
   border: 1px solid var(--border);
   padding: 12px 14px;
-  border-radius: 4px; /* small radius; remove if you want sharp corners */
+  border-radius: 4px; /* set to 0 for perfectly square corners */
   background: #fff;
 }
 .card a, .card span {
-  display: inline-block;
-  font-weight: 600;
-  text-decoration: none;
-  color: var(--link);
+  display: inline-block; font-weight: 600;
+  text-decoration: none; color: var(--link);
 }
 .card a:hover { text-decoration: underline; }
 .card small { display: block; color: var(--muted); margin-top: 4px; }
+

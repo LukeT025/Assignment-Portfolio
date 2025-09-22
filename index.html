@@ -3,152 +3,35 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lucky’s Assignment Portfolio</title>
-  <meta name="description" content="Portfolio hub linking previous, current, and future class web assignments." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <!-- CSS now in the root -->
+  <title>Luke’s Assignment Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header">
-    <div class="container">
-      <h1 class="brand">Lucky’s Assignment Portfolio</h1>
-      <p class="tag">Links to all previous, current, and future web-based assignments.</p>
-      <nav class="top-nav" aria-label="Primary">
-        <ul>
-          <li><a href="#current">Current</a></li>
-          <li><a href="#previous">Previous</a></li>
-          <li><a href="#upcoming">Upcoming</a></li>
-          <li><a href="#all">All</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1>Luke’s Assignment Portfolio</h1>
+    <p>Links to previous, current, and future web-based assignments.</p>
   </header>
 
-  <main id="main" class="container">
-    <section id="current" class="section">
-      <h2>Current Assignments</h2>
-      <ul class="card-grid">
-        <!-- Web Resume -->
-        <li class="card" data-course="Web Dev">
-          <a class="stretched" href="REPLACE_WITH_RESUME_URL" target="_blank" rel="noopener">
+  <main>
+    <section id="current">
+      <h2>Current</h2>
+      <ul class="card-list">
+        <li class="card">
+          <a href="https://lively-hill-02633af1e.2.azurestaticapps.net" target="_blank" rel="noopener">
             Web Resume
           </a>
-          <small class="meta">Web Dev • HTML + CSS • Azure</small>
-          <p class="desc">Lewis-format resume page with print-to-PDF.</p>
+          <small>HTML + CSS • Azure</small>
         </li>
-
-        <!-- Web Dice Roller -->
-        <li class="card" data-course="Web Dev">
-          <a class="stretched" href="REPLACE_WITH_DICE_URL" target="_blank" rel="noopener">
+        <li class="card">
+          <a href="https://zealous-cliff-0dbb7041e.1.azurestaticapps.net" target="_blank" rel="noopener">
             Web Dice Roller
           </a>
-          <small class="meta">Web Dev • JavaScript • Azure</small>
-          <p class="desc">Rolls five 6-sided dice; auto-roll on load; Enter to roll again.</p>
+          <small>JavaScript • Azure</small>
         </li>
-
-        <!-- “Lions, Tigers, and Bears” (Dogs API) -->
-        <li class="card" data-course="Web Dev">
-          <a class="stretched" href="REPLACE_WITH_DOGS_URL" target="_blank" rel="noopener">
+        <li class="card">
+          <a href="https://zealous-plant-07ff44c1e.2.azurestaticapps.net" target="_blank" rel="noopener">
             “Lions, Tigers, and Bears” — Dogs API Slideshow
           </a>
-          <small class="meta">Web Dev • Fetch/Async • Azure</small>
-          <p class="desc">Breed slideshow using Dog CEO API; Start/Stop/Prev/Next.</p>
+          <small>API • Async/Await • Azure</small>
         </li>
-      </ul>
-    </section>
-
-    <section id="previous" class="section">
-      <h2>Previous Assignments</h2>
-      <ul class="card-grid">
-        <li class="card" data-course="Web Dev">
-          <a class="stretched" href="REPLACE_WITH_GETTING_TO_KNOW_URL" target="_blank" rel="noopener">
-            Getting to Know Yourself
-          </a>
-          <small class="meta">Web Dev • Intro</small>
-          <p class="desc">Introductory assignment / personal profile.</p>
-        </li>
-      </ul>
-    </section>
-
-    <section id="upcoming" class="section">
-      <h2>Upcoming / Future</h2>
-      <ul class="card-grid">
-        <li class="card" data-course="Web Dev">
-          <a class="stretched" href="#" aria-disabled="true">Future Web Assignment</a>
-          <small class="meta">Web Dev • Coming soon</small>
-          <p class="desc">Future web assignments will be added below.</p>
-        </li>
-      </ul>
-    </section>
-
-    <section id="all" class="section">
-      <h2>All Assignments</h2>
-      <div class="table-wrap">
-        <table class="table" role="table">
-          <thead>
-            <tr>
-              <th scope="col">Title</th>
-              <th scope="col">Course</th>
-              <th scope="col">Type</th>
-              <th scope="col">Link</th>
-              <th scope="col">Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Web Resume</td>
-              <td>Web Dev</td>
-              <td>Web (HTML/CSS)</td>
-              <td><a href="REPLACE_WITH_RESUME_URL" target="_blank" rel="noopener">Open</a></td>
-              <td>Current</td>
-            </tr>
-            <tr>
-              <td>Web Dice Roller</td>
-              <td>Web Dev</td>
-              <td>Web (JS)</td>
-              <td><a href="REPLACE_WITH_DICE_URL" target="_blank" rel="noopener">Open</a></td>
-              <td>Current</td>
-            </tr>
-            <tr>
-              <td>“Lions, Tigers, and Bears” — Dogs API Slideshow</td>
-              <td>Web Dev</td>
-              <td>Web (API)</td>
-              <td><a href="REPLACE_WITH_DOGS_URL" target="_blank" rel="noopener">Open</a></td>
-              <td>Current</td>
-            </tr>
-            <tr>
-              <td>Getting to Know Yourself</td>
-              <td>Web Dev</td>
-              <td>Web / Doc</td>
-              <td><a href="REPLACE_WITH_GETTING_TO_KNOW_URL" target="_blank" rel="noopener">Open</a></td>
-              <td>Previous</td>
-            </tr>
-            <tr>
-              <td>Future Web Assignment</td>
-              <td>Web Dev</td>
-              <td>Web</td>
-              <td><a href="#" aria-disabled="true">Coming soon</a></td>
-              <td>Upcoming</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="y"></span> Lucky • Hosted on Azure • <a href="#" aria-disabled="true">Privacy</a></p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+      </u
